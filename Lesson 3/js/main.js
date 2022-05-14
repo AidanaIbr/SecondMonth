@@ -12,10 +12,10 @@
 //     }
 // }
 //
-const users = {
-    first_name: 'John',
-    last_name: 'Beka',
-}
+// const users = {
+//     first_name: 'John',
+//     last_name: 'Beka',
+// }
 // const users2 = {
 //     first_name: 'Maruf',
 //     last_name: 'Atay',
@@ -51,20 +51,20 @@ const users = {
 // numbers(num.num1,num.num2)
 // // numbers(3,6)
 
-function twoMass(arr1,arr2) {
-    console.log(arr1, arr2)
-    if(arr1.length > arr2.length){
-        alert("arr1>arr2")
-    }else if(arr1.length < arr2.length){
-        alert("arr1<arr2")
-    } else {
-        alert("===")
-    }
-}
-
-const arr1=[12123,123,1232,33232]
-const arr2=[33232,43,34]
-twoMass(arr1,arr2)
+// function twoMass(arr1,arr2) {
+//     console.log(arr1, arr2)
+//     if(arr1.length > arr2.length){
+//         alert("arr1>arr2")
+//     }else if(arr1.length < arr2.length){
+//         alert("arr1<arr2")
+//     } else {
+//         alert("===")
+//     }
+// }
+//
+// const arr1=[12123,123,1232,33232]
+// const arr2=[33232,43,34]
+// twoMass(arr1,arr2)
 
 // function tr() {
 //     let line="*"
@@ -74,3 +74,28 @@ twoMass(arr1,arr2)
 //     }
 // }
 //tr()
+
+//*****************Задание 1*******************
+// Сделать функцию котороя принимает 2 number аргумента
+// И вычисляет какой из них меньше
+
+function numbersFunction(num1, num2) {
+	if(num1<num2){
+		console.log("Число "+num1+" меньше чем "+num2);
+	}else if(num1>num2){
+		console.log("Число "+num2+" меньше чем "+num1);
+	}else{
+		console.log("Числа "+num1+" и "+num2+" равны");
+	}
+}
+numbersFunction(5,7);
+
+
+//*****************Задание 2*******************
+// Написать функцию countChar
+// Которая может считать длину переданной как аргумент
+
+function countChar(temp) {
+	console.log("Длина равна:"+temp.length)
+}
+countChar("Hello");
