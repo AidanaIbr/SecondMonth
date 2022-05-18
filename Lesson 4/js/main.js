@@ -20,3 +20,48 @@ const block = document.querySelectorAll('.block')
 
 const button = document.getElementById('button');
 const input = document.getElementById('input');
+
+//*********Добавление элемента в body***********
+// function createNewDiv() {
+//         const div = document.createElement('div')
+//         const deleteButton = document.createElement('button')
+//         deleteButton.innerText = "delete"
+//         deleteButton.onclick = (e) => {
+//                 e.path[1].remove()
+//         }
+//         div.setAttribute('class','block')
+//         div.innerText = input.value
+//
+//         div.append(deleteButton)
+//         document.body.append(div)
+//         input.value = ""
+// }
+// button.onclick = createNewDiv;
+
+button.onclick = () => {
+        const div = document.createElement('div')
+        const deleteButton = document.createElement('button')
+        deleteButton.innerText = "delete"
+        deleteButton.onclick = (e) => {
+                e.path[1].remove()
+        }
+        div.setAttribute('class','block')
+        div.innerText = input.value
+
+        div.append(deleteButton)
+        document.body.append(div)
+        input.value = ""
+}
+
+
+
+// button.onclick = (event) => {
+//         console.log(event)
+//         console.log("Clicked")
+// }
+//
+// input.onchange = (event) => {
+//         console.log(event)
+//         console.log(event.target)
+//         console.log(event.target.value)
+// }
