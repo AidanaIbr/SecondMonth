@@ -52,5 +52,29 @@ const Misha = new Bear(
     2,
     300
 )
+
 console.log(Misha)
 Misha.purpose()
+
+
+class Cat extends Animal {
+    constructor(type, gender, color, voiceText, height, weight, earLength, speed) {
+        super(type, gender, color, voiceText);
+        this.height = height;
+        this.weight = weight;
+        this.earLength = earLength;
+        this.speed = speed;
+    }
+}
+
+const Tom = new Cat (
+    "pet",
+    "male",
+    "gray",
+    "meow",
+    40,
+    5,
+    3,
+    10
+)
+
